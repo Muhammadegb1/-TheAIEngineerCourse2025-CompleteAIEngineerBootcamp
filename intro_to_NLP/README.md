@@ -1,53 +1,97 @@
-# Introduction to NLP Course Notebooks
+# AI Engineer Course 2025 - NLP Exercises
 
-Welcome to the **Introduction to NLP** course repository! 
+This repository contains **learning exercises** from the **AI Engineer Course 2025: Complete AI Engineer Bootcamp** on Udemy.
+The exercises are designed to help understand **Python for AI, NLP, and foundational AI concepts**.
 
-This repository contains Jupyter notebooks designed to help you learn the basics of Natural Language Processing through hands-on exercises.
+---
 
-The notebooks are designed to accompany the Introduction to NLP course which can be found here: 
+## Getting Started
 
-https://learn.365datascience.com/courses/nlp
+### Clone the Repository
 
-https://www.udemy.com/course/intro-to-natural-language-processing-in-python-for-ai/
+First, clone this repository to your local machine:
 
-## Installed Packages
-
-These are the installed packages and versions used for this course. All were installed in a conda environment (see below for how I created this). 
-
-python=3.11
-
-```
-nltk==3.9.1 
-pandas==2.2.3 
-matplotlib==3.10.0 
-spacy==3.8.3 
-textblob==0.18.0.post0 
-vaderSentiment==3.3.2 
-transformers==4.47.1 
-scikit-learn==1.6.0 
-gensim==4.3.3 
-seaborn==0.13.2 
-torch==2.5.1 
-ipywidgets==8.1.5
+```bash
+git clone https://github.com/your-username/ai-engineer-nlp.git
+cd ai-engineer-nlp
 ```
 
-## Updates
+### Conda Environment
 
-The world of AI is constantly evolving with new techniques and models emerging all the time. So, while we do our best to keep everything up to date, sometimes the code in this repo may get updated before the accompanying video lessons. To make sure you're getting the most out of this course, we recommend you always use the latest code here alongside the video lessons, while we work on updating the videos. 
+Using a virtual environment is recommended to manage packages without affecting other projects.
 
-## Conda Environment
+Create and activate the environment:
 
-Virtual environments are a great way to manage different packages for different projects. Creating a virtual environment for this section of the course allows you to ensure you can use the correct packages to follow along, without affecting any other packages you already have installed. 
-
-```
+```bash
 conda create --name nlp_course_env python=3.11
 conda activate nlp_course_env
+```
+
+Install the required packages:
+
+```bash
 pip install nltk==3.9.1 pandas==2.2.3 matplotlib==3.10.0 spacy==3.8.3 textblob==0.18.0.post0 vaderSentiment==3.3.2 transformers==4.47.1 scikit-learn==1.6.0 gensim==4.3.3 seaborn==0.13.2 torch==2.5.1 ipywidgets==8.1.5
 python -m spacy download en_core_web_sm
 pip install ipykernel jupyterlab notebook
 python -m ipykernel install --user --name=nlp_course_env
 ```
 
-Then when in the notebook, remember to check the kernel is set to "nlp_course_env". 
+Now you can run Jupyter Notebook or JupyterLab to explore the exercises.
 
+---
 
+## Repository Structure
+
+```
+/exercises
+    ├── tokenization.py            # Exercises on text tokenization and splitting
+    ├── stopwords_and_lemmatization.py  # Removing stopwords and lemmatization exercises
+    ├── sentiment_analysis.py      # Using TextBlob, VADER, and Transformers for sentiment
+    ├── ner_examples.py            # Named Entity Recognition (NER) examples
+    ├── text_classification.py     # Simple text classification exercises
+    ├── word2vec_gensim.py         # Word embeddings and similarity with Gensim
+    ├── visualization.ipynb        # Data and text visualization exercises
+    └── utils.py                   # Helper functions for NLP tasks
+README.md
+```
+
+---
+
+## What I Learned
+
+These exercises helped me understand and practice:
+
+* **Text Preprocessing**:
+
+  * Tokenization, stopwords removal, lemmatization
+  * Cleaning and normalizing text
+* **Sentiment Analysis**:
+
+  * Using TextBlob for polarity and subjectivity
+  * VADER sentiment analysis for social media text
+  * Transformers pipeline for more advanced sentiment tasks
+* **Named Entity Recognition (NER)**:
+
+  * Using spaCy to detect entities like names, organizations, locations
+* **Text Representation**:
+
+  * Word embeddings with Gensim (Word2Vec)
+  * Simple text classification
+* **Data Visualization**:
+
+  * Visualizing token counts, sentiment distributions, and named entities with Matplotlib and Seaborn
+
+---
+
+## How to Run the Exercises
+
+1. Activate the `nlp_course_env` environment.
+2. Open Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+3. Navigate to the `/exercises` folder and open any `.py` or `.ipynb` file to run the exercises.
+
+---
