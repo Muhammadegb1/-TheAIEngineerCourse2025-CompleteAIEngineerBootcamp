@@ -61,7 +61,7 @@ First, clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/Muhammadegb1/AIEngineer2025_Bootcamp.git
-cd ai-engineer-nlp
+cd intro_to_NLP
 ```
 
 ### Conda Environment
